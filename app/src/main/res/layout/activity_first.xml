@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click the below button to take photo from camera and display it in image view" />
+
+            <Button
+                android:id="@+id/btnCameraImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Take Photo From Camera" />
+
+            <ImageView
+                android:id="@+id/ivShowImage"
+                android:layout_width="match_parent"
+                android:layout_height="256dp"
+                android:layout_margin="8dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <ImageView
+                android:id="@+id/ivShowImageCompressed"
+                android:layout_width="match_parent"
+                android:layout_height="256dp"
+                android:layout_margin="8dp"
+                android:src="@mipmap/ic_launcher"
+                android:visibility="visible" />
+
+
+            <TextView
+                android:id="@+id/tvPath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/app_name" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>
